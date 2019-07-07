@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<title>login page</title>
+<!-- <link rel="stylesheet" href="css/style1.css" /> -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+
+
+<style>
+
+body
+{
+	margin:0;
+	padding:0;
+	background-image:linear-gradient(to top,red 4%,white 70%),url(img/images.jpg);
+	background-repeat: no-repeat;
+    background-size:cover;
+	background-attachment: fixed;
+	 background-position: center; 
+	font-family:Tahoma, sans-serif;
+	background-blend-mode:multiply;
+}
+#user-content{height:1000px;margin:auto;width:1000px;} 
+.form_area 
+{
+	
+	 position:absolute;
+	 left:15%;
+	 top:20%;
+	 transform:translate(-50% 50%);
+	 width:450px;
+	 height:auto;
+	 box-sizing:border-box;
+	 background:rgba(0,0,0,0.5);
+	 padding:40px;
+	 border-radius:10px;
+}
+h3
+{
+	margin:0;
+	color:white;
+	padding:0 0 20px;
+	font-weight:bold;
+}
+
+.form_area p
+{
+	margin:0;
+	padding:0;
+	font-weight:;
+	color:#ffffff;
+	
+}
+.form_area input,select
+{
+	width:100%;
+	margin-bottom:10px;
+}
+.form_area input[type=text], .form_area input[type=password], .form_area input[type=number]
+{
+	border:none;
+	border-bottom:1px solid #ffffff;
+	background-color:transparent;
+	outline:none;
+	height:25px;
+	display:16px;
+	color:white;
+}
+
+::placeholder
+{
+	color:silver;
+	opacity:.5;
+}
+
+.form_area select
+{
+	margin-top:20px;
+	padding:10px 0;
+}
+
+.form_area input[type=submit], input[type=reset]
+{
+	border:none;
+	height:40px;
+	outline:none;
+	border-radius:20px;
+	background:tomato;
+	cursor:pointer;
+	color:white;
+}
+.user-style input[type=submit],input[type=reset]{
+	border:none;
+	height:40px;
+	outline:none;
+	border-radius:20px;
+	background:tomato;
+	cursor:pointer;
+	color:white;
+}
+ .form_area input[type=submit]:hover, input[type=reset]:hover
+ {
+	background-color:cyan;
+	color:black;
+ }
+.form_area a
+{
+	color:white;
+	text-decoration:none;
+	font-size:14px;
+}
+</style>
+</head>
+<body>
+	<section id="user-content">
+	<div class="form_area">
+		<center><h3>Create your account</h3></center>
+		<form method="post"action="user_login.php"enctype="multipart/form-date">
+			<p>name</p>
+			<input type="text"name="name" placeholder="Enter Username" pattern="[a-zA-Z' ']*$" title="Plz Enter Characters Only"  required>
+			<p>Email</p>
+			<input type="text"name="email" placeholder="Enter email" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" title="Plz Enter valid email Address"  required>
+			<p>Password</p>
+			<input type="password" name="psw" id="psw"  placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 8 characters' : ''); if(this.checkValidity()) form.confirm_password.pattern = this.value;" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+			<p>Confirm_password:</p>
+			<input type="password" name="confirm_password"placeholder="********" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" title="Password and Confirm password must be same !"  required>
+			<p>State</p>
+			<select name="state">
+				<option>Select a city</option>
+				<option  value="assam">Assam</option>
+				<option  value="Karnataka">Karnataka</option>
+				<option  value="Maharastra">Maharastra</option>
+				<option value="Chennai">Chennai</option>
+				<option  value="Manipur">Manupur</option>
+				<option  value="Sikkim">Sikkim</option>
+			</select>
+			<p>City</p>
+			<input type="text" name="city" placeholder="Enter Your City name"  required>
+			<p>Address</p>
+			<input type="text" name="address" placeholder="Enter your address" required>
+			<p>Pincode</p>
+			<input type="text" name="pincode" placeholder="Enter pincode" pattern="[0-9]{6}" title="PLEASE ENTER 6 DIGIT ONLY" required>
+			<p>Phone</p>
+			<input type="text" name="phoneno" placeholder="Enter mobile no" pattern="[1-9]{1}[0-9]{9}" title="PHONE NUMBER MUST BE 10 DIGIT ONLY"  required>
+			<input type="reset"name="reset"value="Reset">
+			<input type="submit"name="sign_up"value="sign up">
+		</form>
+    </div>
+<div class="form_area" style="left:55%;top:30%;">
+<center><h3>Login Your Account</h3></center>
+<form method="post" action="user_login.php" enctype="multipart/form-date">
+<p>User Email/Mobile</p>
+<input type="text" name="user_email" placeholder="Enter Email" required>
+<p>Password</p>
+<input type="password" name="user_password" placeholder="*********"  required>
+<br>
+<input type="reset"name="reset"value="Reset">
+<input type="submit"name="login"value="Login">
+</form>
+</div>
+</section>
+</body>
+</html>
