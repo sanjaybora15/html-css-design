@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WASTE MANAGEMENT</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<a  href="#">
+			<img src="images/wm logo.png" alt="wmlogo">
+		</a>
+		<style>
+		
+		
+/* For all the body */
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* HEADER */
+
+header img{
+	width: 130px;
+	height: 90px;
+}
+
+header img:hover{
+	cursor: pointer;
+}
+
+header {
+	padding-left: 10%;
+	background-color: rgba(128,128,128,0.1);
+}
+
+/*Navbar section*/
+
+.navbar{
+		background: linear-gradient(rgb(2,189,54), rgb(0,102,0));
+		overflow: hidden;
+		font-family:Tahoma;	
+		letter-spacing: 1.5px;	
+}
+
+.navbar a{
+	float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbarDiv{
+	width: 100%;
+	margin-left: 20%;
+}
+
+.dropdown{
+	float: left;
+	overflow: hidden;
+}
+
+.dropbtn{
+	letter-spacing: 1.5px;
+}
+
+
+.dropdown .dropbtn {	
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+ 	font-family: tahoma;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(0,180,0,0.7);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.dropdown-content {
+	letter-spacing: 0px;
+    display: none;
+    position: absolute;
+    background-color: #ECECEC;
+    width: 100%;
+    height: 200px;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.3s;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    height: 200px;
+}
+
+
+.row{
+	width: 1000px;
+	margin-left: 21%;
+	padding-top: 14px;
+}
+
+.column a {
+	text-align: left;
+	padding: 7px;
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.column a:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*nav end*/
+
+
+
+/*Article section*/
+
+#getMeStarted{
+	cursor: pointer;
+}
+.Main_image{
+	position: relative;
+	width: 100%;
+
+}
+
+
+
+.Main_image_text{
+	width: 40%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	left: 34%;
+}
+
+.imageText{
+	color: white;
+	font-size: 2.80em;
+	font-family: Barlow-Light;
+	margin-bottom: 40px;
+}
+
+
+.imageText select{
+	margin-left: 30px;
+	font-family: inherit;
+	background-color: transparent;
+	border-width: 0px;
+	width: 30%;
+	height: 70px;
+	font-size: 0.70em;
+	color: #ffae19;
+	border-bottom: 2px solid #ffae19;
+	text-overflow: ellipsis;
+}
+
+.location{
+	background: transparent;
+	outline: none;
+	border: 0px;
+	border-bottom: 2px solid #ffae19;
+	font-size: inherit;
+	width: 50%;
+}
+
+p input[type="text"]{
+	color: #ffae19;
+	width: 50%;
+	font-size: 0.85em;
+}
+
+.xtraMargin{
+		margin-left: 160px;
+}
+
+.buttonDesign{
+	color: white;
+	padding: 12px 18px;
+	font-size: 1.20em;
+	font-family: Tahoma;
+	border: 2px solid white;
+	border-radius: 5px;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.5);
+	}
+
+.acc{
+	margin-left: -25px;
+	margin-top: 20px;
+	color: white;
+	text-align: center;
+}
+
+.acc a{
+	color: white;
+}
+
+/*Article end*/
+
+
+
+/*Section Begins*/
+section{
+	background-color: #f1f1f1;
+}
+
+.SectionHead{
+	display: block;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 60px;
+	font-family: tahoma;
+	padding-top: 20px;
+	color: #006900;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+.normal{
+	text-align: center;
+	font-size: 30px;
+	color: #404040;
+}
+
+.container{
+	margin-top: 14px;
+	width: 100%;
+	text-align: center;
+}
+
+.card{
+	width: 22%;
+	display: inline-block;
+	margin-left: 40px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 10px 10px 5px grey;
+	height: 400px;
+	font-family: cursive;
+	text-align: center;
+	}
+
+.card h3{
+	padding: 10px;
+	color: #329932;
+	background-color: #e5f2e5;
+	border-radius: 8px;
+	font-size: 34px;
+	margin-bottom: 40px;
+}
+
+.card h2{
+	width: 65%;
+	margin: 0px auto 30px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #e0e0e0;
+	font-family: Arial;
+	color: rgba(0,0,0,0.6)
+}
+
+/*Buy Buttons design*/
+.buy{
+	background: linear-gradient(rgb(125,199,50),rgb(83,167,0));
+	padding: 12.5px 25px;
+	border: 1px solid white;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: Cabin-Regular;
+}
+
+.buy a{
+	color: white;
+}
+
+.buy:hover{
+	background-color: #196619;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 8px 8px 10px grey;
+}
+
+
+/*Buy button end*/
+
+/*A Simple Container to display some text*/
+
+.simpleArticle{
+	width: 100%;
+	height: 600px;
+}
+
+/*End of Simple Container*/
+
+/* Footer */
+
+footer{
+    background-color: #006900;
+    height:40px;
+}
+.footer-container{
+    color: white;
+    text-align: center;
+    padding:15px;
+    bottom: 0px;
+}
+.footer-policy{
+float: right;
+}
+
+		
+		</style>
+	</header>
+
+
+
+	<nav class="navbar">
+		<div class="navbarDiv">
+			<div class="dropdown">
+					<button class="dropbtn">Residential</button>
+						<div class="dropdown-content">
+							<div class="row">
+								<div class="column">
+									<h5>Pickup Services</h5>	
+										<a>Trash</a>
+										<a>Recycling</a>
+										<a>Yard Waste</a>
+										<a>Food Organics</a>
+								</div>
+								<div class="column">
+									<h5> Large Trash </h5>	
+										<a>Dumpster Rental</a>
+										<a>Construction Waste</a>
+										<a>Bagster Bag</a>
+										<a>Bulk Pickup</a>
+								</div>
+								<div class="column">
+									<h5> Recycling Information </h5>	
+										<a>What can i recycle?</a>
+										<a>Recycling Benefits</a>
+								</div>
+								<div class="column">
+									<h5>Drop-Off Locations</h5>	
+										<a>Trash</a>
+										<a>Recycling</a>
+								</div>
+								<div class="column">
+									<h5>Additional Services</h5>	
+										<a>Communities</a>
+										<a>Portable Storage</a>
+								</div>
+							</div>
+						</div>
+			</div>
+			<div class="dropdown">
+					<button class="dropbtn" >Industry Solutions</button>
+						<div class="dropdown-content">
+							<div class="row">
+								<div class="column">
+									<h5> Schools</h5>	
+										<a>Colleges</a>
+										<a>Kid School</a>
+										<a>Education foundation</a>
+								</div>
+								<div class="column">
+									<h5>Commercial </h5>	
+										<a>Office Building</a>
+										<a>Stadiums</a>
+										<a>Lodging</a>
+										<a>Convention Centers</a>
+								</div>
+								<div class="column">
+									<h5>Food & Retail</h5>	
+										<a>Retail Solutions</a>
+										<a>Restaurant Solutions</a>
+										<a> Grocery Stores </a>
+								</div>
+								<div class="column">
+									<h5>Healthcare</h5>	
+										<a>Facilities</a>
+										<a>Pharmaceuticals</a>
+										<a> Clinics </a>
+										<a> Communities</a>
+								</div>
+								<div class="column">
+									<h5>Government</h5>	
+										<a>Federal</a>
+										<a>Municipalities</a>
+										<a> Residential Solutions</a>
+								</div>
+							</div>
+						</div>
+			</div>
+					<a href="#packages">Packages</a>
+					<a href="#">Customer Support</a>
+					<a href="#">My Account</a>
+			</div>
+	</nav>
+
+
+
+	<article>
+
+		<div class="Main_image">
+			<img src="images/11.jpg" alt=" " width="100%" height="600px" class="centered_image">
+			<div class="Main_image_text">
+				<p class="imageText">
+					For my 
+						<select>
+						<option class="orange">Residence</option> 
+						<option> Business </option>
+						</select>
+				</p>
+				<p class="imageText">
+					Located at 
+					<input type = "text" class="location" placeholder="Your Location">
+				</p>
+				<p class="imageText">
+					I am interested in
+						<select>
+						<option>Bulkup Pickup</option>
+						<option>Dumpster Pickup</option> 
+						<option>Trash or Recycling Service</option>
+						<option>Other</option>
+						</select>
+				</p>
+
+					<input id="getMeStarted" type="button" value="Get Me Started" class="buttonDesign  xtraMargin">
+
+					<p class="acc"> Have an account? <a href="#"> Log in </a></p>
+			</div>
+		</div>
+
+	</article>
+
+
+
+	<section>
+		<h1 class="SectionHead">We've got you covered</h1>
+		<p class="normal">With proper waste management,</p>
+		<p class="normal">We will keep your work space clean and fresh</p>
+
+		<div class="emptyContainer"></div>
+
+
+		<div class="container" >
+			<div class="card">
+				<h3><a name="packages">3 Monthly</a></h3>
+				<h2>35$</h2>
+				<h2>24/7 Support</h2>
+				<h2>Request Extra Pickup</h2>
+				<input type="button" name="button" value="Get" class="buy">
+			</div><div class="card">
+				<h3>6 Monthly</h3>
+				<h2>60$</h2>
+				<h2>24/7 Support</h2>
+				<h2>Request Extra Pickup</h2>
+				<input type="button" name="button" value="Get" class="buy">
+			</div><div class="card">
+				<h3>Yearly</h3>
+				<h2>100$</h2>
+				<h2>24/7 Support</h2>
+				<h2>Request Extra Pickup</h2>
+				<input type="button" name="button" value="Get" class="buy">
+			</div>
+
+		</div> 
+
+		<div>
+			<h1 class="SectionHead"> Why we're the best!!! </h1>
+			<p class="normal">For Starters we will keep your surrounding </p>
+			<h1 class="SectionHead" style=" font-size: 150px; color: rgba(0,0,0,0.8);letter-spacing: 0px"> 99.9% </h1>
+			<p class="normal"> Clean & Fresh </p>
+
+
+		</div>
+
+        <footer>
+            <div class="footer-container">
+                <p> Waste management &copy; 2019 || Privacy Policy and Cookie Policy  Support</p>
+            </div>
+        </footer>
+</body>
+</html>
